@@ -1,0 +1,290 @@
+
+#back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 2px;
+    height: 40px;
+    width: 40px;
+    background-color: $SalmonRose;
+    color: $blanc;
+    border-radius: 50%;
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    display: none;
+}
+#back-to-top:hover {
+    background-color: $blanc;
+    color: $SalmonRose;
+}
+.reassurancediv{
+    .reassuranceimg{
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        margin-bottom: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+    .reassuranceimgmob{
+        display: none;
+    }
+    .reassurance{
+        padding: 400px 0 200px;
+        position: relative;
+        width: 100%;
+        .container{
+            max-width: 1360px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+            .grid-x{
+                display: flex;
+                flex-flow: row wrap;
+                .description {
+                    padding: 0 60px;
+                    padding-left: 70px;
+                    margin-bottom: 60px;
+                    h2 {
+                        font-size: 42px;
+                        line-height: 1.14;
+                        text-align: right;
+                        color: $blanc;
+                        margin-bottom: 54px;
+                        position: relative;
+                        z-index: 99999;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        letter-spacing: 1.07px;
+                        text-align: right;
+                        color: $blanc;
+                        position: relative;
+                        z-index: 99999;
+                        width: 50%;
+                        float: right;
+                    }
+                }
+            }
+        }
+       
+    }
+    .reassurance-grp 
+    {
+        width: 60%;
+        .reassurance-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            position: relative;
+            margin-bottom: 50px;
+                img {
+                    max-width: 100px;
+                    position: relative;
+                    z-index: 1;
+                    height: 100px;
+                }
+                p {
+                    font-size: 13px;
+                    color: $blanc;
+                    padding: 0 20px;
+                    margin: 0;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+    }
+    .certif-prod{
+        width: 40%;
+        float: right;
+        .reassurance-certif{
+            position: relative;
+            background-color: $bleuvert;
+            padding: 40px;
+            z-index: 1;
+
+            p {
+                color: $blanc;
+                font-size: 24px;
+                line-height: 1.33;
+                text-align: center;
+            }
+            .certification {
+                background-color: $blanc;
+                padding: 23px 20px;
+                position: absolute;
+                right: 25px;
+                bottom: -29%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 131px;
+                    height: 36px;
+                }
+            }
+            
+            
+        }
+    }
+    .more-reassurance {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .gamme-btn{
+        border-radius: 100px;
+        border: 0;
+        background: $SalmonRose;
+        color: $blanc;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 34px;
+        display: inline-block;
+        margin-left: 30px;
+
+    }
+    .btn:hover {
+        background-color: $blanc;
+        color: $SalmonRose;
+    }
+}
+@media only screen and (max-width:667px){
+    .reassurancediv{
+        .reassuranceimg{
+         display: none;
+        }
+        .reassuranceimgmob{
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            margin-bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            display: inline;
+        }
+        .reassurance{
+            padding: 400px 0 200px;
+            position: relative;
+            width: 100%;
+            .container{
+                    margin: 0;
+                    padding: 0;
+                .grid-x{
+                    .description {
+                        padding: 0;
+                        margin-bottom: 0;
+                        h2 {
+                            font-size: 22px;
+                            text-align: center;
+                            margin-bottom: 44px;
+                        }
+                        p {
+                            font-size: 12px;
+                            width: 100%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+           
+        }
+        .reassurance-grp 
+        {
+            width: 100%;
+            position: relative;
+            .reassurance-item {
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                    img {
+                        max-width: 70px;
+                        height: 50px;
+                        margin-right: initial;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-size: 11px;
+                        text-align: center;
+                       
+                    }
+                }
+        }
+        .certif-prod{
+            width: 100%;
+            .reassurance-certif{
+                padding: 29px 16px 59px;
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .certification {
+                    padding: 14px 11px;
+                    right: 12px;
+                    img{
+                        margin: 0 12px;
+                        max-width: 63px;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    #back-to-top {
+        right: 28px;
+        bottom: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .reassurancediv{
+        margin-top: -93px;
+        .reassurance {
+            padding: 300px 0 300px;
+            .container{
+                .grid-x{
+                    .description{
+                        padding: 0 60px;
+                        margin-top: 27%;
+                        h2{
+                            text-align: center;
+                            padding: 0 80px 36px;
+                        }
+                        p {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .reassurance-grp{
+            width: 100%;
+        }
+        .certif-prod{
+            width: 86%;
+            margin-left: 8%;
+            .reassurance-certif{
+                .certification{
+                    bottom: -52px;
+                    right: -39px;
+                }
+            }
+        }
+    }
+}
+
+
+
+   

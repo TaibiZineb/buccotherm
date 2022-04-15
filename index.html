@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>maquette buccotherm</title>
+    <script type="text/javascript">
+         $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                          slidesToShow: 3,
+                          slidesToScroll: 3,
+                          infinite: true,
+                          dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 667,
+                        settings: {
+                          slidesToShow: 1,
+                          slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                          slidesToShow: 1,
+                          slidesToScroll: 1
+                        }
+                    }  
+                ]
+            });
+            $('.magasinslide').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }    
+                },
+                {
+                    breakpoint: 667,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }  
+                ]
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="barinfo">	
+        <div class="info">	
+            <form role="search" method="get" id="searchform" action="">
+                <div class="input-group">
+                    <span class="icon-search"></span>
+                </div>
+            </form>
+            <div class="position">
+                <span class="icon-location"></span>
+					<a href="#" class="pointvente">Trouver un point de vente</a>
+            </div>
+            <div class="lang-menu">
+                <div class="selected-lang">
+                    FR
+                    <span class="icon-chevron-down"></span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="" class="en">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav id="NavBar">
+        <h1 class="header-logo">
+            <a href="#"><img src="img/logo.png" id="NavLogo" alt="logo"/></a>
+        </h1>
+            <ul class="NavList">
+                <li class="NavListItem"><a href="#">Nos produits</a> <span class="icon-chevron-down"></span></li>
+                <li class="NavListItem"><a href="#">l'eau thermale</a><span class="icon-chevron-down"></span></li>
+                <li class="NavListItem"><a href="#">Notre marque</a><span class="icon-chevron-down"></span></li>
+                <li class="NavListItem"><a href="#">Professionnels</a> <span class="icon-chevron-down"></span> </li>
+                <li class="NavListItem limag">
+                    <a href="#"><img src="img/mag.png" class="mag" alt="Mag"/></a>
+                </li>
+                <div class="position2">
+                    <span class="icon-location"></span>
+                        <a href="#" class="pointvente">Trouver un point de vente</a>
+                </div>
+                
+            </ul>
+            <div class="burgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+    </nav>      
+
+</header>  
+<main class="main-content">
+    <div class="entete">
+        <img src="img/entete.png" alt="" class="entete-bg">
+        <img src="img/entete-bg-mobile-1.png" alt="" class="entete-bg-mobil">
+        <div class="entete-wrapper">
+            <h1>Une Eau thermale, source de sourire</h1>
+            <div class="entete-wrapper__content">
+                <img class="entete-logo" src="img/bio.svg" alt="">
+                <p>Un ingrédient d’exception pour une gamme de soins bucco-dentaires composée au minimum de 97% d’ingrédients d'origine naturelle & 100% fabriquée en France.<br /><br />Nous avons forcément le soin adapté à vos besoins et sans aucun compromis !<br /><br /></p>
+                <a class="btn" href="/buccodiag" target="">Trouver mon produit</a>
+            </div>
+        </div>
+        <button class="btn-todown"><span>La gamme</span>
+        <span class="icon-chevron-down"></span></button>
+    </div> 
+    <div class="gamme">
+        <span class="france-fab">
+            <span class="spantext"> Fabrication 100% francaise </span>
+        </span>
+        <h2>Notre gamme est adaptée à chaque cycle de vie</h2>
+        <div class="gamme-wrapper">
+            <div class="gamme-tabs">
+                <ul class="categories">
+                    <li class="is-active"><a class="filter-cat" data-term="dentifrices-adultes" href="#dentifrices-adultes" aria-selected="true">DENTIFRICES ADULTES</a></li>
+                    <li><a class="filter-cat" data-term="soins-adultes" href="#soins-adultes">SOINS ADULTES</a></li>
+                    <li><a class="filter-cat" data-term="dentifrices-enfants" href="#dentifrices-enfants">DENTIFRICES ENFANTS</a></li>
+                    <li><a class="filter-cat" data-term="soins-nourissons" href="#soins-nourissons">SOINS NOURRISSONS</a></li>
+                    <li><a class="filter-cat" data-term="eco-concue" href="#eco-concue">PRODUITS PLUS RESPONSABLES</a></li>
+                </ul>
+            </div>
+            <section class="regular slider">
+                <div>
+                    <a href="#">
+                        <div class="card-product">
+                            <div class="card-product-header">  
+                                <span class="icon-madeinfrance">
+                                <img class="img-svg" src="img/icon-madeinfrance.svg" alt="icon-madeinfrance">
+                                </span>
+                                <span class="ecocert">
+                                <img class="img-svg" src="img/ecocert.svg" alt="ecocert">
+                                </span>
+                                <span class="picto_bio_made-in-france">
+                                <img class="img-svg" src="img/bio.svg" alt="picto_bio_made-in-france">
+                                </span>
+                            </div>
+                            <div class="card-product-body">
+                                <img  src="img/Tube-Buccotherm-citron.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Dentifrice protection complète bio au citron eucalyptus" />
+                                <h3 class="card-product-title">Dentifrice Protection Complète au Citron eucalyptus certifié BIO</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="card-product">
+                            <div class="card-product-header">  
+                                <span class="icon-madeinfrance">
+                                <img class="img-svg" src="img/icon-madeinfrance.svg" alt="icon-madeinfrance">
+                                </span>
+                                <span class="ecocert">
+                                <img class="img-svg" src="img/ecocert.svg" alt="ecocert">
+                                </span>
+                                <span class="picto_bio_made-in-france">
+                                <img class="img-svg" src="img/bio.svg" alt="picto_bio_made-in-france">
+                                </span>
+                            </div>
+                            <div class="card-product-body">
+                                <img  src="img/dentifrice-charbon.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Dentifrice Blancheur au Charbon Actif certifié BIO" />
+                                <h3 class="card-product-title">Dentifrice Blancheur au Charbon Actif certifié BIO</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="card-product">
+                            <div class="card-product-header">  
+                                <span class="icon-madeinfrance">
+                                <img class="img-svg" src="img/icon-madeinfrance.svg" alt="icon-madeinfrance">
+                                </span>
+                                <span class="ecocert">
+                                <img class="img-svg" src="img/ecocert.svg" alt="ecocert">
+                                </span>
+                                <span class="picto_bio_made-in-france">
+                                <img class="img-svg" src="img/bio.svg" alt="picto_bio_made-in-france">
+                                </span>
+                            </div>
+                            <div class="card-product-body">
+                                <img  src="img/Tube-Prevention-caries.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Dentifrice Prévention Caries" />
+                                <h3 class="card-product-title">Dentifrice Prévention Caries</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="card-product">
+                            <div class="card-product-header">  
+                                <span class="icon-madeinfrance">
+                                <img class="img-svg" src="img/icon-madeinfrance.svg" alt="icon-madeinfrance">
+                                </span>
+                                <span class="ecocert">
+                                <img class="img-svg" src="img/ecocert.svg" alt="ecocert">
+                                </span>
+                                <span class="picto_bio_made-in-france">
+                                <img class="img-svg" src="img/bio.svg" alt="picto_bio_made-in-france">
+                                </span>
+                            </div>
+                            <div class="card-product-body">
+                                <img  src="img/dentifice-gencives-sensibles.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Gel dentifrice Gencives Sensibles avec Fluor certifié BIO" />
+                                <h3 class="card-product-title">Gel dentifrice Gencives Sensibles avec Fluor certifié BIO</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="card-product">
+                            <div class="card-product-header">  
+                                <span class="icon-madeinfrance">
+                                <img class="img-svg" src="img/icon-madeinfrance.svg" alt="icon-madeinfrance">
+                                </span>
+                                <span class="ecocert">
+                                <img class="img-svg" src="img/ecocert.svg" alt="ecocert">
+                                </span>
+                                <span class="picto_bio_made-in-france">
+                                <img class="img-svg" src="img/bio.svg" alt="picto_bio_made-in-france">
+                                </span>
+                            </div>
+                            <div class="card-product-body">
+                                <img  src="img/Gencives-Sensibles-Sans-Fluor.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Gel dentifrice Gencives Sensibles avec Fluor certifié BIO" />
+                                <h3 class="card-product-title">Gel dentifrice Gencives Sensibles sans Fluor certifié BIO</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>  
+            <a class="btn gamme-btn" id="custom_link" href="#" target="">Découvrir la gamme complète</a>  
+        </div>  
+     
+       
+    </div>
+    <div class="reassurancediv">
+        <img src="img/reassurance-bg.png" alt="" class="reassuranceimg">
+        <img src="img/reassurance-mobile.png" alt="" class="reassuranceimgmob">
+        <section class="reassurance">
+            <div class="container">
+                <div class="grid-x" >
+                    <div class="description cell small-12 medium-12 large-6 large-offset-6">
+                        <h2>Pourquoi choisir nos produits ?</h2><p>Plus besoin de choisir entre naturel et efficacité : c'est l'intérêt de mettre au cœur de la composition de nos produits une eau thermale d'exception comme principe actif !</p>
+                        </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell reassurance-grp large-7">
+                        <div class="grid-x">
+                            <div class="cell reassurance-item large-6 medium-6 small-6">
+                                <img src="img/Groupe-3.svg" class="alignleft img-svg" alt="groupe svg 3" loading="lazy" />                         
+                                <p> Des soins formulés à base d’Eau Thermale de Castéra-Verduzan</p>
+                            </div>
+                            <div class="cell reassurance-item large-6 medium-6 small-6">
+                                <img src="img/Group.svg" class="alignleft img-svg" alt="" loading="lazy"/>                        
+                                <p> Nos produits sont élaborés et conditionnés en France, dans le Gers</p>
+                            </div>
+                            <div class="cell reassurance-item large-6 medium-6 small-6">
+                                <img src="img/biogroup.svg" class="alignleft img-svg wp-post-image" alt="reassurance pictos" loading="lazy" />                         <p> Nous respectons la nature, les producteurs et vous</p>
+                            </div>
+                            <div class="cell reassurance-item large-6 medium-6 small-6">
+                                <img src="img/etoile.svg" class="alignleft img-svg wp-post-image" alt="reassurance" loading="lazy" />                         
+                                <p> Nos formules contiennent plus de 97% d’ingrédients d’origine naturelle</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="cell certif-prod large-5">
+                        <div class="reassurance-certif">
+                            <p>Et parce que nos produits ont aussi des certifications !</p>
+                            <div class="certification">
+                                <img class="imgcertif" src="img/Bitmap-5.png" alt="ufsbd"/>
+                                <img class="imgcertif" src="img/Bitmap-4.png" alt="groupe ecocert"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="more-reassurance">
+                    <a class="btn gamme-btn" href="#" target="_self">Plus de details ?</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="magasin">
+        <div>
+            <h2 class="h-top"><a href="#" target="">le mag</a></h2>
+            <div class="actualite">
+                <div class="actualite-disc">
+                    <p>Les actus, conseils et tendances pour votre bien-être bucco-dentaire !</p>
+                </div>
+            </div>
+            <section class="magasinslide slider">
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item">
+                            <div class="actualite-card" id="infos-sante">
+                                <div class="actualite-card-content">
+                                       <p class="categorie-actu ">INFOS SANTÉ</p>
+                                        <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                        <h3 class="actualite-card-title">Dentifrice enfants : avec ou sans fluor ?</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item">
+                            <div class="actualite-card" id="conseils">
+                                <div class="actualite-card-content">
+                                    <p class="categorie-actu ">conseils</p>
+                                    <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                    <h3 class="actualite-card-title">BUCCOTHERM® à l’Élysée &#8211; Rencontre avec le PDG du Laboratoire</h3>
+                                </div>
+                            </div>
+                    </div>
+                    </a>
+                </div>  
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item"  >
+                            <div class="actualite-card-content" id="infos-sante">
+                                <p class="categorie-actu ">INFOS SANTÉ</p>
+                                <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                <h3 class="actualite-card-title">Mon dentifrice est-il abrasif?</h3>                                                                                         
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item">
+                            <div class="actualite-card" id="conseils">
+                                <div class="actualite-card-content">
+                                    <p class="categorie-actu ">conseils</p>
+                                    <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                    <h3 class="actualite-card-title">BUCCOTHERM® s’invite à l’Élysée !</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item"  >
+                            <div class="actualite-card-content" id="infos-sante">
+                                <p class="categorie-actu ">INFOS SANTÉ</p>
+                                <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                <h3 class="actualite-card-title">Mon dentifrice est-il abrasif?</h3>                                                                                         
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="magasin-slide-item">
+                            <div class="actualite-card" id="conseils">
+                                <div class="actualite-card-content">
+                                    <p class="categorie-actu ">conseils</p>
+                                    <span class="date">09.02.2020<span class="icon-calendar1"></span></span>
+                                    <h3 class="actualite-card-title">Comment choisir le bon dentifrice pour vos enfants ?</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <a class="btn magasin-btn" href="#" target="">Lire plus d'articles</a>
+        </div>
+     </div>   
+    <a href="#" id="back-to-top" title="C"><span class="icon-arrow-up"></span></a>       
+</main>
+<footer>
+    <div class="grid-x container">
+        <div class="cell small-12 medium-4 c-footer__newsletter">
+			<h2>Newsletter</h2>
+				<p>Recevez tous les mois nos conseils et actualités pour améliorer votre hygiène bucco-dentaire !</p>
+				<a class="btn" href="#" target="">Je m'abonne</a>
+        </div>
+        <div class="cell small-12 medium-4 c-footer__info">
+            <h2>Souriez avec nous :)</h2>
+			<ul>
+                <li>
+                    <a href="#" target="_blank">
+                    <img class="img-svg" src="img/rs-facebook-1.svg"></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                    <img class="img-svg" src="img/rs-youtube-1.svg"></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                    <img class="img-svg" src="img/rs-insta-1.svg"></a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                    <img class="img-svg" src="img/rs-linkedin-1.svg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="cell small-12 medium-4 c-footer__contact">			
+            <p>Laboratoire Odost<br />
+                23 rue du lac<br />32410 Castéra-Verduzan<br />FRANCE</p>
+            <p><a class="phone" href="tel:+33(0)5 62 68 11 40">T : +33(0)5 62 68 11 40</a></p>
+            <a class="btn" href="https://www.buccotherm.com/contact/" target="">Je vous contacte</a>
+        </div>
+	</div>  
+    <div class="footer-menu-wrap bottom-footer">
+        <div class="c-footer__partners">
+            <img src="img/partners.png" alt="">
+        </div>
+        <ul id="menu-footer" class="footer">
+            <li id="menu-item-8632" class="menu-item menu-item-object-page"><a href="#">Mentions Légales</a></li>
+            <li id="menu-item-8633" class="menu-item menu-item-object-page"><a href="#">Nos Distributeurs à l&rsquo;International</a></li>
+            <li id="menu-item-57938" class="menu-item menu-item-object-page"><a href="#">Politique de protection des données</a></li>
+        </ul>    
+        <div class="DivImg">
+            <p>© 2020 Buccotherm - Tous les droits sont réservés</p>
+                <a href="#" target="_blank">
+                    <img class="lazy" src="img/dbm.png" alt="dbm"></a>
+        </div>
+    </div>   
+</footer>
+<script src="script/script.js"></script>
+</body>
+</html>

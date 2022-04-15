@@ -1,0 +1,174 @@
+.gamme 
+{
+    padding-top: 76px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    .gamme-wrapper{
+        h2 {
+            text-align: center;
+            padding: 0 65px;
+        }
+        .gamme-tabs {
+            background-color: $bleuvert;
+            height: 477px;
+            top: 176px;
+            float: right;
+            width: 23%;
+            position: absolute;
+            z-index: 3;
+            .categories {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                line-height: 1;
+                margin-top: 145px;
+                margin-left: 3px;
+                li {
+                    margin: 14px 0;
+                    padding-right: 15px;
+                    .filter-cat {
+                        padding-bottom: 6px;
+                        color: $blanc;
+                        position: relative;
+                        transition: all 0.3s ease-in;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        border-bottom: 2px solid transparent;
+                        padding-bottom: 2px;
+                        line-height: 1.4;
+                    }
+                }
+                li:hover
+                {
+                    .filter-cat {
+                        color: #fff;
+                        border-bottom: 2px solid #0e4b6c;
+                    }
+                }
+
+            }
+            
+        }
+        .gamme-btn {
+            border-radius: 100px;
+            border: 0;
+            background: $SalmonRose;
+            color: $blanc;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 12px 34px;
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .gamme-btn:hover{
+            background-color: $blanc;
+            color: $SalmonRose;
+            opacity: 1;
+        }
+    }
+    
+    .france-fab {
+        background-color: $blanc;
+        border-bottom: 14px solid $rouge;
+        border-top: 14px solid $bleu;
+        font-weight: 500;
+        padding: 4px 70px;
+        position: absolute;
+        transform: rotate(45deg);
+        top: 60px;
+        right: -90px;
+        letter-spacing: 1px;
+    }
+    h2{
+        margin-bottom: 23px;
+        margin-left: 427px;
+    }
+}
+
+@media only screen and (max-width:667px){
+    .gamme{
+        display: block;
+        .gamme-wrapper {
+            padding-right: 10px;
+            padding-left: 10px;
+            h2 {
+                font-size: 26px;
+                line-height: 1.38;
+                padding: 0 30px;
+            }
+            .gamme-tabs{
+                position: unset;
+                top: 0;
+                height: unset;
+                width: 100%;
+                margin: 0 -30px;
+                float: inherit;
+                .categories {
+                    margin-left: -10px;
+                    flex-direction: row;
+                    height: 81px;
+                    margin-top: 13px;
+                    li{
+                        padding-right: 0px;
+                        margin: 0px;
+                        .filter-cat{
+                            font-size: 10px;
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+                
+        }
+        
+        .france-fab {
+            display: none;
+        }
+        h2{
+            margin-bottom: 0px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .gamme{
+        .france-fab {
+            display: block;
+            transform: rotate(45deg) scale(0.8);
+            top: 0px;
+            right: -40px;
+            .spantext{
+                display: none;
+            }
+            
+        }
+        h2{
+            margin-left: 8%;
+        }
+        .gamme-wrapper{
+            .gamme-tabs{
+                position: unset;
+                top: 0;
+                height: unset;
+                width: 95%;
+                margin: 0 -30px;
+                float: inherit;
+                .categories{
+                    margin-left: 0;
+                    flex-direction: row;
+                    height: 144px;
+                    margin-top: 48px;
+                    li {
+                        flex: 1;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

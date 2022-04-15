@@ -1,0 +1,166 @@
+
+.regular{
+    margin: auto;
+    width: 75%;
+    max-width: 1367px;
+    height: 500px;
+    margin-top: 121px;
+    margin-left: 20%;
+    position: relative;
+    z-index: 9999;
+}
+.regular{
+    a{
+        text-decoration: none;
+        color: $bleumarine;
+    }
+    .card-product{
+        background-color: $blanc;
+        border-radius: 30px;
+        position: relative;
+        border: solid 2px $bleuciel;
+        display: flex;
+        height: 460px;
+        z-index: 1;
+        .card-product-header 
+        {
+            width: 40px;
+            display: block;
+            margin-bottom: 10px;
+            .icon-madeinfrance{
+                width: 40px;
+                display: block;
+                float: right;
+                margin-right: 684%;
+                margin-top: 11px;
+            }
+            .ecocert {
+                width: 40px;
+                display: block;
+                margin-bottom: 10px;
+                float: right;
+                margin-right: 684%;
+                margin-top: 11px;
+            }
+            
+            .picto_bio_made-in-france{
+                width: 40px;
+                display: block;
+                margin-bottom: 10px;
+                float: right;
+                margin-right: 684%;
+                margin-top: 11px;
+            }
+        } 
+        .card-product-body {
+            padding: 45px 0px;
+            img {
+                height: 264px;
+                object-fit: contain;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .card-product-title {
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: 1.29px;
+                padding: 0 17px;
+                text-align: center;
+                margin-top: 35px;
+                height: 179px;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }  
+     }
+}
+  
+.card-product:hover{
+    border: solid 2px $bleuvert;
+}
+.regular{
+    .slick-next:before, .slick-prev:before{
+        color: $bleuvert-2;
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    color: $bleu;
+}
+.slick-dots li button:before {
+    color: $bleuvert-2;
+}
+@media only screen and (max-width:667px){
+    .regular{
+        margin-top: 50px;
+        margin-left: 12%; 
+        .card-product{
+            .card-product-body{
+                img {
+                    height: 235px;
+                }
+            }
+            .card-product-header 
+            {
+                width: 40px;
+                display: block;
+                margin-bottom: 10px;
+                .icon-madeinfrance{
+                    margin-right: 145%;
+                    margin-top: 11px;
+                }
+                .ecocert {
+                    margin-right: 162%;
+                    margin-top: 11px;
+                }
+                
+                .picto_bio_made-in-france{
+                    margin-right: 145%;
+                    margin-top: 11px;
+                }
+            } 
+        }
+      
+    }
+
+}
+@media (min-width:768px) and (max-width:1024px){
+    .regular{
+        margin-top: -60px;
+        margin-left: 5%;
+        max-width: 900px;
+        .card-product {
+            height: 491px;
+            .card-product-body{
+                img{
+                    margin-left: 13%;
+                }
+            }
+            .card-product-header 
+            {
+                width: 40px;
+                display: block;
+                margin-bottom: 10px;
+                .icon-madeinfrance{
+                    margin-right: 145%;
+                    margin-top: 11px;
+                }
+                .ecocert {
+                    margin-right: 162%;
+                    margin-top: 11px;
+                }
+                
+                .picto_bio_made-in-france{
+                    margin-right: 145%;
+                    margin-top: 11px;
+                }
+            } 
+        }
+        
+    }
+}
+
+
+

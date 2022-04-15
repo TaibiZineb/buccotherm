@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="54" viewBox="0 0 63 54">
+  <g id="Groupe_3" data-name="Groupe 3" transform="translate(-61 -321)">
+    <g id="Groupe_2" data-name="Groupe 2">
+      <g id="ICONS_graphics_icon-caldera" data-name="ICONS/graphics/icon-caldera" transform="translate(71 327)">
+        <g id="icon-caldera" transform="translate(0.046 8.546)">
+          <g id="Group" transform="translate(0 15.361)">
+            <path id="Path" d="M0,2.168C3.807.019,9.594-.641,17.2.679s12.073,1.65,16.209.99c-3.638,2.648-13.255,1.412-17.276.468A34.061,34.061,0,0,0,0,2.168" transform="translate(0.468 0)" fill="#53baaa"/>
+            <path id="Path-2" data-name="Path" d="M0,1.788A19.345,19.345,0,0,1,9.563.053c5.457.414,8.488,1.873,12.595,2.065C17,3.085,15.3,1.258,8.128.989A31.74,31.74,0,0,0,0,1.788" transform="translate(0 2.338)" fill="#53baaa"/>
+          </g>
+          <g id="Group-2" data-name="Group" transform="translate(5.165 0)">
+            <path id="Path-3" data-name="Path" d="M0,0V4.613H1.543V2A.86.86,0,1,1,3.262,2V4.613H5.488V2A.86.86,0,0,1,7.207,2V4.613H9.433V2a.86.86,0,1,1,1.719,0V4.613h1.543V0Z" transform="translate(6.785 3.231)" fill="#53baaa"/>
+            <path id="Shape" d="M0,2.924,6.931,0l6.937,2.939Z" transform="translate(6.201 0)" fill="#53baaa"/>
+            <path id="Path-4" data-name="Path" d="M0,0V9.31H2.149V3.039a1.7,1.7,0,0,1,3.408,0V9.31H6.8V3.039a1.7,1.7,0,0,1,3.4,0V9.31h1.243V3.039a1.7,1.7,0,0,1,3.408,0V9.31h1.243V3.039a1.7,1.7,0,0,1,3.408,0V9.31h1.243V3.039a1.7,1.7,0,0,1,3.4,0V9.31h2.149V0Z" transform="translate(0 8.189)" fill="#53baaa"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="COMPONENTS_reassurance" data-name="COMPONENTS/reassurance" transform="translate(61 321)">
+      <g id="COMPONENTS_reassurance_picto" data-name="COMPONENTS/reassurance/picto">
+        <g id="Group-3" data-name="Group">
+          <circle id="Oval" cx="25" cy="25" r="25" transform="translate(3)" fill="#54c8be" opacity="0.2"/>
+          <g id="Oval-2" data-name="Oval" transform="translate(0 36)" fill="none" stroke="#00bdad" stroke-miterlimit="10" stroke-width="1" opacity="0.202">
+            <circle cx="9" cy="9" r="9" stroke="none"/>
+            <circle cx="9" cy="9" r="8.5" fill="none"/>
+          </g>
+          <circle id="Oval-3" data-name="Oval" cx="12.5" cy="12.5" r="12.5" transform="translate(38 5)" fill="#54c8be" opacity="0.203"/>
+          <circle id="Oval-4" data-name="Oval" cx="3.5" cy="3.5" r="3.5" transform="translate(6 5)" fill="#54c8be" opacity="0.197"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
