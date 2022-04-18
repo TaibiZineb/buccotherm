@@ -1354,6 +1354,10 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  #back-to-top {
+    height: 44px;
+    width: 44px;
+  }
   .reassurancediv {
     margin-top: -93px;
   }
